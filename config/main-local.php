@@ -42,7 +42,7 @@ $localConfig = array(
             'connectionString' => 'mysql:host=localhost;dbname=app_01',
             'emulatePrepare' => true,
             'username' => 'root',
-            'password' => '111',
+            'password' => '',
             'charset' => 'utf8',
             'enableProfiling' => TRUE, //rada sql statementus
             'enableParamLogging' => TRUE, //add            

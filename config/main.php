@@ -251,7 +251,7 @@ $mainConfig = array(
             'templatePath' => 'xxx',
             // email transport methods
             
-            'swiftMailerPath' => realpath($applicationDirectory . '/../../../vendor/swiftmailer/swiftmailer/lib'),
+            'swiftMailerPath' => realpath($applicationDirectory . '/vendor/swiftmailer/swiftmailer/lib'),
             'transports' => array(
 
                 // mail transport

@@ -12,7 +12,7 @@ $webappCommand = array(
     'yiic',
     'webapp',
     'create',
-    realpath(dirname(__FILE__) . '/../../../'),
+    realpath(dirname(__FILE__) . '/'),
     'git',
     '--interactive=' . (getenv('PHUNDAMENT_TEST') ? '0' : '1')
 );
@@ -25,8 +25,8 @@ $mainConfig = require('main.php');
 
 $consoleConfig = array(
     'aliases'    => array(
-        'vendor' => $applicationDirectory . '/../../../vendor',
-        'webroot' => $applicationDirectory . '/../../../www',
+        'vendor' => $applicationDirectory . '/vendor',
+        'webroot' => $applicationDirectory . '//www',
         //'gii-template-collection'              => 'vendor.phundament.gii-template-collection', // TODO
         'audittrail' => 'vendor.dbrisinajumi.audittrail',
     ),
@@ -56,13 +56,13 @@ $consoleConfig = array(
             'modulePaths'           => array(
                 
                 'audittrail'              => 'vendor.dbrisinajumi.audittrail.migrations', //1
-                //'core_init'               => 'application.migrations_init',
-                //'yii-user'                => 'vendor.uldisn.yii-user.migrations',           //2
+                'core_init'               => 'application.migrations_init',
+                'yii-user'                => 'vendor.uldisn.yii-user.migrations',           //2
                 //'d2files'                 => 'vendor.dbrisinajumi.d2files.migrations',      //4
                 //'d2person'                => 'vendor.dbrisinajumi.d2person.migrations',    //5
                 //'d2company'               => 'vendor.dbrisinajumi.d2company.migrations',    //6
-                //'core_main'                    => 'application.migrations_init2',
-                //'yeeki'                   => 'vendor.dbrisinajumi.yeeki.migrations',      //8
+                'core_main'                    => 'application.migrations_init2',
+                'yeeki'                   => 'vendor.dbrisinajumi.yeeki.migrations',      //8
                 //'d1files'                 => 'vendor.dbrisinajumi.d1files.migrations',    //8 for d2companies
                 //no ready for init 'd2tasks'                 => 'vendor.dbrisinajumi.d2tasks.migrations',    //9
                 //no ready for init 'd2finv'                  => 'vendor.dbrisinajumi.d2finv.migrations',
