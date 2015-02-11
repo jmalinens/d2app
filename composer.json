@@ -1,5 +1,5 @@
 {
-    "name": "uldisn/eu_app",
+    "name": "uldisn/weberp",
     "description": "EU ERP",
     "keywords": ["erp","yii","phundament"],
     "type": "yii-app",
@@ -7,17 +7,89 @@
     "authors": [
         {
             "name": "Uldis Nelsons",
-            "email": "uldisnelsons@gmail.com"
+            "email": "uldisnelsons@gmail.com",
+            "homepage":"http://www.weberp.lv"
+        }
+    ],
+	"provide": {
+		"phundament/jquery-file-upload": "*",
+		"crisu83/yii-rights": "*"
+	},
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"http://packages.phundament.com"
+        },
+        {
+                "type": "vcs",
+                "url": "https://github.com/DBRisinajumi/DbrLib"
+        },
+        {
+                "type": "vcs",
+                "url": "https://github.com/DBRisinajumi/d2person"
+        },
+        {
+                "type": "vcs",
+                "url": "https://github.com/DBRisinajumi/d2company"
+        },
+        {
+                "type": "vcs",
+                "url": "https://github.com/DBRisinajumi/audittrail"
+        },
+        {
+                "type": "vcs",
+                "url": "https://github.com/DBRisinajumi/yeeki"
+        },
+        {
+                "type": "vcs",
+                "url": "https://github.com/Webkadabra/yii-rights"
+        },
+        {
+                "type": "vcs",
+                "url": "https://github.com/clevertech/yiibooster"
+        },
+        {
+                "type": "vcs",
+                "url": "https://github.com/schmunk42/web-user-behavior"
+        },
+        {
+                "type": "vcs",
+                "url": "https://github.com/dbrisinajumi/DbrLib"
+        },
+        {
+                "type": "vcs",
+                "url": "https://github.com/pentium10/yii-remember-filters-gridview"
+        },
+        {
+                "type": "vcs",
+                "url": "https://github.com/malyshev/yii-debug-toolbar"
+        },
+        {
+                "type": "package",
+                "package": {
+                    "name": "bopoda/ace",
+                    "version": "1.0",
+                    "dist": {
+                        "url": "https://github.com/bopoda/ace/archive/master.zip",
+                        "type": "zip"
+                    },
+                    "source": {
+                        "url": "git@github.com:bopoda/ace.git",
+                        "type": "git",
+                        "reference": "origin/master"
+                    }
+            }
         }
     ],
      "require": {
         "php": ">=5.3.0",
         "yiisoft/yii":"1.1.16",
-        "crisu83/yii-rights":"@dev",
-        "clevertech/yiibooster":"2.1.*",
+		"crisu83/yii-rights":"dev-master",
+        "clevertech/yiibooster":"2.1.0",
         "yiiext/migrate-command":"dev-master#35f315b as 0.7.2.1",
         "schmunk42/multi-theme":"0.1.*",
-        "phundament/p3extensions":"0.17.*",        
+		"blueimp/jquery-file-upload":"9.9.3",
+        "phundament/p3extensions":"0.17.1",        
         "schmunk42/web-user-behavior":"0.1.*",
         "schmunk42/relation" : "1.*",
         "dbrisinajumi/audittrail": "dev-master",
@@ -25,8 +97,12 @@
         "uldisn/ace": "dev-master",
         "uldisn/yii-user": "dev-master",
         "dbrisinajumi/DbrLib": "dev-master",
-        "dbrisinajumi/d2company": "dev-master",
-        "dbrisinajumi/d2person": "dev-master",
-        "dbrisinajumi/yeeki": "dev-master"
+        "dbrisinajumi/d2company": "@dev",
+        "dbrisinajumi/d2person": "@dev",
+        "dbrisinajumi/yeeki": "dev-master",
+		"dbrisinajumi/audittrail": "dev-master",
+		"bopoda/ace": "1.0",
+		"crisu83/yii-rights": "@dev",
+		"malyshev/yii-debug-toolbar": "@dev"
      }    
 }

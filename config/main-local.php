@@ -54,7 +54,7 @@ $localConfig = array(
                 array(
                     'class'  => 'CFileLogRoute',
                     'levels' => 'error, warning',
-                    'logPath' => 'G:/xdocs/app-0.21.0_20131018/logfiles/uldisn_d2app',
+                    'logPath' => dirname(__FILE__).'/../',
                 ),
                 array(
                     'class'=>'vendor.malyshev.yii-debug-toolbar.YiiDebugToolbarRoute',

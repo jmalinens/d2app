@@ -17,6 +17,7 @@ $devConfigFile = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'main-development.php
 
 // convenience variables
 $applicationDirectory = realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR);
+
 $baseUrl              = (dirname($_SERVER['SCRIPT_NAME']) == '/' || dirname($_SERVER['SCRIPT_NAME']) == '\\') ? '' :
     dirname($_SERVER['SCRIPT_NAME']);
 
@@ -34,9 +35,9 @@ $mainConfig = array(
     ),
     'aliases'    => array(
         // composer
-        'root'                                 => $applicationDirectory . '/../../..',
-        'webroot'                              => $applicationDirectory . '/../../../www',
-        'vendor'                               => $applicationDirectory . '/../../../vendor',
+        'root'                                 => $applicationDirectory . '/',
+        'webroot'                              => $applicationDirectory . '/www',
+        'vendor'                               => $applicationDirectory . '/vendor',
         // componentns
         'bootstrap'                            => 'vendor.clevertech.yiibooster.src',
         'editable'                             => 'vendor.vitalets.x-editable-yii',
@@ -558,7 +559,7 @@ $mainConfig = array(
         'AuditTrail' => array(
             'table' =>'s_audit_trail',
         ),
-        'ace_assets' => realpath($applicationDirectory . '/../../../vendor/responsiweb/ace-v1.2--bs-v2.3.x/assets'),
+        'ace_assets' => realpath($applicationDirectory . '/vendor/bopoda/ace/assets'),
     ),
 );
 
