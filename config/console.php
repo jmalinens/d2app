@@ -61,7 +61,7 @@ $consoleConfig = array(
                 'audittrail'              => 'vendor.dbrisinajumi.audittrail.migrations', //1
                 'core_init'               => 'application.migrations_init',
                 'yii-user'                => 'vendor.uldisn.yii-user.migrations',           //2
-                //'d2files'                 => 'vendor.dbrisinajumi.d2files.migrations',      //4
+                'd2files'                 => 'vendor.dbrisinajumi.d2files.migrations',      //4
                 'd2person'                => 'vendor.dbrisinajumi.d2person.migrations',    //5
                 'd2company'               => 'vendor.dbrisinajumi.d2company.migrations',    //6
                 'core_main'                    => 'application.migrations_init2',
@@ -130,7 +130,7 @@ $consoleConfig = array(
                     array('yiic', 'migrate', '--interactive=1','--module=audittrail'),
                     array('yiic', 'migrate', '--interactive=1','--module=core_init'),
                     array('yiic', 'migrate', '--interactive=1','--module=yii-user'),
-                    //array('yiic', 'migrate', '--interactive=1','--module=d2files'),
+                    array('yiic', 'migrate', '--interactive=1','--module=d2files'),
                     array('yiic', 'migrate', '--interactive=1','--module=d2person'),
                     array('yiic', 'migrate', '--interactive=1','--module=d2company'),
                     array('yiic', 'migrate', '--interactive=1','--module=core_main'),
