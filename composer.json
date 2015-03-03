@@ -1,6 +1,6 @@
 {
-    "name": "uldisn/weberp",
-    "description": "EU ERP",
+    "name": "uldisn/d2app",
+    "description": "YII ERP",
     "keywords": ["erp","yii","phundament"],
     "type": "yii-app",
     "license": "BSD-2-Clause",
@@ -11,82 +11,24 @@
             "homepage":"http://www.weberp.lv"
         }
     ],
-    "repositories":[
-        {
-            "type":"composer",
-            "url":"http://packages.phundament.com"
-        },
-        {
-                "type": "vcs",
-                "url": "https://github.com/DBRisinajumi/DbrLib"
-        },
-        {
-                "type": "package",
-                "package": {
-                    "name": "bopoda/ace",
-                    "version": "1.0",
-                    "dist": {
-                        "url": "https://github.com/bopoda/ace/archive/master.zip",
-                        "type": "zip"
-                    },
-                    "source": {
-                        "url": "git@github.com:bopoda/ace.git",
-                        "type": "git",
-                        "reference": "origin/master"
-                    }
-            }
-        }
-    ],
-     "minimum-stability":"dev",	
      "require": {
         "php": ">=5.3.0",
         "yiisoft/yii":"1.1.16",
-
         "crisu83/yii-rights":"@dev",
         "clevertech/yiibooster":"2.1.*",
         "yiiext/migrate-command":"dev-master#35f315b as 0.7.2.1",
-        
         "schmunk42/multi-theme":"0.1.*",
         "phundament/p3extensions":"0.17.*",        
         "schmunk42/web-user-behavior":"0.1.*",
         "schmunk42/relation" : "1.*",
-
+        "dbrisinajumi/audittrail": "dev-master",
         "vitalets/x-editable-yii": "dev-master",
-		"bopoda/ace": "1.0",
-
-		"uldisn/yii-user": "dev-master",
-        
-        "dbrisinajumi/audittrail": "dev-master",        
+        "uldisn/ace": "dev-master",
+        "uldisn/yii-user": "dev-master",
         "dbrisinajumi/DbrLib": "dev-master",
         "dbrisinajumi/d2company": "dev-master",
         "dbrisinajumi/d2person": "dev-master",
-        "dbrisinajumi/d2calendar": "dev-master",
-        "dbrisinajumi/person_atv": "dev-master",
         "dbrisinajumi/yeeki": "dev-master",
-        "dbrisinajumi/VidVestules": "dev-master",
-        "dbrisinajumi/d2messages": "dev-master",
-        "dbrisinajumi/d2mailer": "dev-master"
-		
-
-     },
-    "require-dev":{
-        "dbrisinajumi/gii-template-collection": "dev-develop"
-    },	 
-    "autoload":{
-        "psr-0":{
-            "D2App":"./src"
-        }
-    },
-    "scripts":{
-        "pre-install-cmd":"D2App\\ComposerCallback::preInstall",
-        "post-install-cmd":"D2App\\ComposerCallback::postInstall",
-        "pre-update-cmd":"D2App\\ComposerCallback::preUpdate",
-        "post-update-cmd":"D2App\\ComposerCallback::postUpdate",
-        "post-package-install":[
-            "D2App\\ComposerCallback::postPackageInstall"
-        ],
-        "post-package-update":[
-            "D2App\\ComposerCallback::postPackageUpdate"
-        ]
-    }     
+        "dbrisinajumi/d1files": "dev-master"
+     }    
 }

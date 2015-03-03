@@ -17,7 +17,6 @@ $devConfigFile = dirname(__FILE__) . DIRECTORY_SEPARATOR . 'main-development.php
 
 // convenience variables
 $applicationDirectory = realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR);
-
 $baseUrl              = (dirname($_SERVER['SCRIPT_NAME']) == '/' || dirname($_SERVER['SCRIPT_NAME']) == '\\') ? '' :
     dirname($_SERVER['SCRIPT_NAME']);
 
@@ -35,9 +34,9 @@ $mainConfig = array(
     ),
     'aliases'    => array(
         // composer
-        'root'                                 => $applicationDirectory . '/',
-        'webroot'                              => $applicationDirectory . '/www',
-        'vendor'                               => $applicationDirectory . '/vendor',
+        'root'                                 => $applicationDirectory . '/../../..',
+        'webroot'                              => $applicationDirectory . '/../../../www',
+        'vendor'                               => $applicationDirectory . '/../../../vendor',
         // componentns
         'bootstrap'                            => 'vendor.clevertech.yiibooster.src',
         'editable'                             => 'vendor.vitalets.x-editable-yii',
@@ -251,7 +250,7 @@ $mainConfig = array(
             'templatePath' => 'xxx',
             // email transport methods
             
-            'swiftMailerPath' => realpath($applicationDirectory . '/vendor/swiftmailer/swiftmailer/lib'),
+            'swiftMailerPath' => realpath($applicationDirectory . '/../../../vendor/swiftmailer/swiftmailer/lib'),
             'transports' => array(
 
                 // mail transport
@@ -559,7 +558,8 @@ $mainConfig = array(
         'AuditTrail' => array(
             'table' =>'s_audit_trail',
         ),
-        'ace_assets' => realpath($applicationDirectory . '/vendor/bopoda/ace/assets'),
+        //'ace_assets' => realpath($applicationDirectory . '/../../ace_admin/v_2_3/assets'),
+        'ace_assets' => realpath($applicationDirectory . '/../../bopoda/ace/assets'),
     ),
 );
 

@@ -39,7 +39,7 @@ $localConfig = array(
         'db' => array(
             'tablePrefix' => '',
             // MySQL
-            'connectionString' => 'mysql:host=localhost;dbname=***db_name***',
+            'connectionString' => 'mysql:host=****host****;dbname=***db_name***',
             'emulatePrepare' => true,
             'username' => '***user_name***',
             'password' => '***user_password***',
@@ -47,21 +47,21 @@ $localConfig = array(
             'enableProfiling' => TRUE, //rada sql statementus
             'enableParamLogging' => TRUE, //add            
         ),
-        'log'           => array(
-            'class'  => 'CLogRouter',
-            'enabled' => true,
-            'routes' => array(
-                array(
-                    'class'  => 'CFileLogRoute',
-                    'levels' => 'error, warning',
-                    'logPath' => dirname(__FILE__).'/../',
-                ),
-                array(
-                    'class'=>'vendor.malyshev.yii-debug-toolbar.YiiDebugToolbarRoute',
-                    'ipFilters'=>array('127.0.0.1','192.168.1.215'),
-                ),
-            ),
-        ),
+//        'log'           => array(
+//            'class'  => 'CLogRouter',
+//            'enabled' => true,
+//            'routes' => array(
+//                array(
+//                    'class'  => 'CFileLogRoute',
+//                    'levels' => 'error, warning',
+//                    'logPath' => dirname(__FILE__).'/../',
+//                ),
+//                array(
+//                    'class'=>'vendor.malyshev.yii-debug-toolbar.YiiDebugToolbarRoute',
+//                    'ipFilters'=>array('127.0.0.1','192.168.1.215'),
+//                ),
+//            ),
+//        ),
         
     ),
     'params' => array(
